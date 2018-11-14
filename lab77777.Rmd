@@ -1,0 +1,18 @@
+---
+title: "lab77"
+author: "Vanessa Guenther, Callie Steffen, Renee Albreight"
+date: "11/14/2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+
+ggplot(iris)
+
+```
+
