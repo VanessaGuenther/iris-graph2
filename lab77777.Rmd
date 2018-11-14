@@ -13,8 +13,9 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 
 ggplot(iris, aes(x = Petal.Length, y = Petal.Width))+
-  geom_point()+
-  xlab("Petal Length")+
+  geom_point(aes(color = Species)) +
+  facet_wrap(~ Species , scale = "free") +
+  xlab("Petal Length") +
   ylab("Petal Width")
 
 ```
