@@ -12,7 +12,10 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(tidyverse)
 
-ggplot(iris)
+ggplot(iris, aes(x = Petal.Length, y = Petal.Width))+
+  geom_point()+
+  xlab("Petal Length")+
+  ylab("Petal Width")
 
 ```
 
