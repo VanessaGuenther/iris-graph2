@@ -16,7 +16,10 @@ ggplot(iris, aes(x = Petal.Length, y = Petal.Width))+
   geom_point(aes(color = Species)) +
   facet_wrap(~ Species , scale = "free") +
   xlab("Petal Length") +
-  ylab("Petal Width")
+  ylab("Petal Width")+
+  labs( title = " Petal Length/Width accross Iris Species")
+  
+
 
 ```
 
